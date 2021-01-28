@@ -10,7 +10,7 @@
     $sql = "select * from product";
     // SQL実行オブジェクトを取得
     $pstmt = $pdo->prepare($sql);
-    // SQLを実行
+    // SQLを実行 
     $pstmt->execute();
     // SQL実行結果を配列に取得
     $records = $pstmt->fetchAll(PDO::FETCH_ASSOC);
